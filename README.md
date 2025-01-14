@@ -28,22 +28,4 @@ This project involves the design and implementation of transceivers for communic
   - BladeRF SDR: For signal transmission and reception  
   - SDR Framework: Ensuring flexibility in implementing modulation schemes  
 
-## File Structure  
-```plaintext  
-/  
-├── QPSK_Transceiver/  
-│   ├── transmitter.m          # QPSK Transmitter Implementation  
-│   ├── receiver.m             # QPSK Receiver Implementation  
-├── QPSK_FEC_Transceiver/  
-│   ├── transmitter_fec.m      # QPSK Transmitter with FEC  
-│   ├── receiver_fec.m         # QPSK Receiver with FEC  
-├── QPSK_CRC_Transceiver/  
-│   ├── transmitter_crc.m      # QPSK Transmitter with CRC  
-│   ├── receiver_crc.m         # QPSK Receiver with CRC  
-├── GMSK_Transceiver/  
-│   ├── transmitter_gmsk.m     # GMSK Transmitter Implementation  
-│   ├── receiver_gmsk.m        # GMSK Receiver Implementation  
-├── SDR_Flowcharts/  
-│   ├── qpsk_transceiver.grc   # GNU Radio Companion flowchart for QPSK  
-│   ├── gmsk_transceiver.grc   # GNU Radio Companion flowchart for GMSK  
-├── README.md                  # Project Documentation (this file)  
+
