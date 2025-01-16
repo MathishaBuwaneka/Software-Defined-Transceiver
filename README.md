@@ -28,4 +28,61 @@ This project involves the design and implementation of transceivers for communic
   - BladeRF SDR: For signal transmission and reception  
   - SDR Framework: Ensuring flexibility in implementing modulation schemes  
 
+## Operating the QPSK CRC Transceiver Application  
+
+Download the folder named 'appCRCTranceiver QPSK,' which includes all required Python files.  
+
+### Prerequisites  
+1. Ensure you have **Python** installed on your system.  
+2. Install **Streamlit** and other required Python packages using:  
+   ```bash  
+   pip install streamlit  
+   ```  
+3. Verify that the following Python scripts are present in the downloaded folder:  
+   - `addPreamble.py`  
+   - `crctransmitter.py`  
+   - `crcreceiver.py`  
+   - `removePreamble.py`  
+
+### Steps to Operate the App  
+
+1. **Start the App:**  
+   - Open a terminal or command prompt.  
+   - Run the Streamlit app using:  
+     ```bash  
+     streamlit run app.py  
+     ```  
+
+2. **Choose Operation:**  
+   - Use the **sidebar** to select either the **Transmitter** or **Receiver** page.  
+
+#### Transmitter Page Instructions  
+1. Enter the file path of the **input file** under **Enter file location** (e.g., `C:\path\to\file.tx`).  
+2. Enter the **output path** where the temporary file should be saved.  
+3. Adjust:  
+   - **Samples per symbol** (default: 2).  
+   - **Multiply constant** (default: 0.707).  
+4. Click **🥜 Start Transmitting** to begin:  
+   - The app processes the input file with `addPreamble.py`.  
+   - It then transmits using `crctransmitter.py`.  
+5. Observe the success or error messages for each step.  
+
+**Note:** Ensure the BladeRF device is connected before starting transmission.  
+
+#### Receiver Page Instructions  
+1. Enter the **destination path** for the received file.  
+2. Specify the **temporary file path** for saving intermediate data.  
+3. Adjust:  
+   - **Samples per symbol** (default: 2).  
+   - **Multiply constant** (default: 0.707).  
+4. Click **📥 Start Receiving** to begin:  
+   - The app receives the file with `crcreceiver.py`.  
+   - It processes the received file with `removePreamble.py`.  
+5. Check the success or error messages displayed for each step.  
+
+**Note:** Ensure the BladeRF device is connected before starting reception.  
+
+### Troubleshooting  
+- If the app fails, ensure all paths are valid and the required scripts are in the same directory.  
+- Use the logs displayed in the app for debugging.
 
