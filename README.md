@@ -58,22 +58,22 @@ Download the folder named 'appCRCTranceiver QPSK,' which includes all required P
 2. **Choose Operation:**  
    - Use the **sidebar** to select either the **Transmitter** or **Receiver** page.  
 
-#### Transmitter Page Instructions  
-1. Enter the file path of the **input file** under **Enter file location** (e.g., `C:\path\to\file.tx`).  
-2. Enter the **output path** where the temporary file should be saved.  
+#### Transmitter Instructions  
+1. Enter the file path of the **input file** under **Enter file location** (e.g., `C:\path\to\file.txt`).  
+2. Enter the **output path** where the temporary file should be saved(Tmp file which was created after appending the preamble.E.g., `C:\path\to\file.tmp`).  
 3. Adjust:  
    - **Samples per symbol** (default: 2).  
    - **Multiply constant** (default: 0.707).  
-4. Click **🥜 Start Transmitting** to begin:  
+4. Click **🦜 Start Transmitting** to begin:  
    - The app processes the input file with `addPreamble.py`.  
    - It then transmits using `crctransmitter.py`.  
 5. Observe the success or error messages for each step.  
 
 **Note:** Ensure the BladeRF device is connected before starting transmission.  
 
-#### Receiver Page Instructions  
-1. Enter the **destination path** for the received file.  
-2. Specify the **temporary file path** for saving intermediate data.  
+#### Receiver Instructions  
+1. Enter the **destination path** for the received file(e.g., `C:\path\to\file.txt`).  
+2. Specify the **temporary file path** for saving intermediate data(Location to save the received Tmp file.E.g., `C:\path\to\file.tmp`).  
 3. Adjust:  
    - **Samples per symbol** (default: 2).  
    - **Multiply constant** (default: 0.707).  
@@ -85,6 +85,5 @@ Download the folder named 'appCRCTranceiver QPSK,' which includes all required P
 **Note:** Ensure the BladeRF device is connected before starting reception.  
 
 ### Troubleshooting  
-- If the app fails, ensure all paths are valid and the required scripts are in the same directory.  
-- Use the logs displayed in the app for debugging.
+- If the app fails, ensure all paths and file extentions are correct.
 
