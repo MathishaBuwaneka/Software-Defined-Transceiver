@@ -30,7 +30,7 @@ This project involves the design and implementation of transceivers for communic
 
 ## Operating the QPSK CRC Transceiver Application  
 
-Download the folder named **'appCRCTranceiver QPSK,'** which includes all required Python files.  
+Download the folder named **'appCRCTranceiver QPSK'** which includes all required Python files.  
 
 ### Prerequisites  
 1. Ensure you have **Python** installed on your system.  
