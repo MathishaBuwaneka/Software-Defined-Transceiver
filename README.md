@@ -39,10 +39,12 @@ Download the folder named 'appCRCTranceiver QPSK,' which includes all required P
    pip install streamlit  
    ```  
 3. Verify that the following Python scripts are present in the downloaded folder:  
+   - `app.py`
    - `addPreamble.py`  
    - `crctransmitter.py`  
    - `crcreceiver.py`  
-   - `removePreamble.py`  
+   - `removePreamble.py`
+     
 
 ### Steps to Operate the App  
 
